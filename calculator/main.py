@@ -49,6 +49,8 @@ class CalculatorGUI:
             except Exception as e:
                 self.entry.delete(0, tk.END)
                 self.entry.insert(tk.END, "Error")
+        elif button == 'C':
+            self.entry.delete(0, tk.END)
         else:
             self.entry.insert(tk.END, button)
 
